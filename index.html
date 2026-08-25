@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucy Devenish</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    background: #f5f5f4;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* HEADER */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px 0 60px;
+  }
+
+  .site-title {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  nav {
+    display: flex;
+    gap: 36px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  nav a.active {
+    color: #bbb;
+    font-weight: 600;
+  }
+
+  /* MAIN / WORK GRID */
+  main {
+    flex: 1;
+    padding: 175px 60px 100px 60px;
+  }
+
+  .work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 314px);
+    column-gap: 48px;
+    row-gap: 48px;
+    max-width: 1200px;
+  }
+
+  .work-item {
+    width: 314px;
+    height: 216px;
+    border: 1px solid #ddd;
+    background: #fff;
+    overflow: hidden;
+    display: block;
+  }
+
+  .work-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .work-item.empty {
+    background: #f5f5f4;
+  }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid #e2e2e0;
+    padding: 22px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 13px;
+    color: #555;
+  }
+
+  .scroll-top {
+    position: absolute;
+    right: 60px;
+    color: #999;
+    font-size: 18px;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="site-title">Lucy Devenish</div>
+    <nav>
+      <a href="index.html" class="active">work</a>
+      <a href="exhibitions.html">exhibitions</a>
+      <a href="bio.html">bio</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="work-grid">
+      <a class="work-item" href="#">
+        <img src="https://res.cloudinary.com/dvqqrxh85/image/upload/v1787614889/gig1_rpftul.jpg" alt="Fleet">
+      </a>
+      <a class="work-item empty" href="#"></a>
+      <a class="work-item empty" href="#"></a>
+      <a class="work-item" href="#">
+        <img src="https://res.cloudinary.com/dvqqrxh85/image/upload/v1787614906/gig2_o2yhoh.jpg" alt="">
+      </a>
+      <a class="work-item" href="#">
+        <img src="https://res.cloudinary.com/dvqqrxh85/image/upload/v1787614786/gig3_fk5c1b.jpg" alt="">
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <span>All content on this website &copy; Lucinda Devenish, unless otherwise stated.</span>
+    <a class="scroll-top" href="#top" title="Back to top">&#8593;</a>
+  </footer>
+
+</body>
+</html>
